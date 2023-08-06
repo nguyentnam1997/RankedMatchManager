@@ -33,7 +33,7 @@ public class SummonRift {
     public String toString() {
         return "======== SummonRift =======" + "\n" +
                 ", Thời gian bắt đầu trận đấu" + timeStart +
-                "Team" + "\n" +teams +
+                "zTeam" + "\n" +teams +
                 '}';
     }
 }
