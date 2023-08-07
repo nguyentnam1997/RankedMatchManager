@@ -17,9 +17,10 @@ public class Main {
         SummonRiftService summonRiftService = new SummonRiftService();
 
         ArrayList<Figure> figures = new ArrayList<>();
-        ArrayList<Team> teams = new ArrayList<>();
+        ArrayList<Team> team1 = new ArrayList<>();
+        ArrayList<Team> team2 = new ArrayList<>();
 
-        SummonRift summonRift = summonRiftService.createMatch(scanner, teamService, figureService, teams, figures);
+        SummonRift summonRift = summonRiftService.createMatch(scanner, teamService, figureService,figures, team1, team2);
         System.out.println(summonRift);
     }
 }

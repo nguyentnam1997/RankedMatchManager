@@ -4,21 +4,31 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class SummonRift {
-    private ArrayList<Team> teams;
-
+    private ArrayList<Team> team1;
+    private ArrayList<Team> team2;
     private LocalDateTime timeStart;
 
-    public SummonRift(ArrayList<Team> teams, LocalDateTime timeStart) {
-        this.teams = teams;
+
+    public SummonRift(ArrayList<Team> team1, ArrayList<Team> team2, LocalDateTime timeStart) {
+        this.team1 = team1;
+        this.team2 = team2;
         this.timeStart = timeStart;
     }
 
-    public ArrayList<Team> getTeams() {
-        return teams;
+    public ArrayList<Team> getTeam1() {
+        return team1;
     }
 
-    public void setTeams(ArrayList<Team> teams) {
-        this.teams = teams;
+    public void setTeam1(ArrayList<Team> team1) {
+        this.team1 = team1;
+    }
+
+    public ArrayList<Team> getTeam2() {
+        return team2;
+    }
+
+    public void setTeam2(ArrayList<Team> team2) {
+        this.team2 = team2;
     }
 
     public LocalDateTime getTimeStart() {
@@ -32,8 +42,8 @@ public class SummonRift {
     @Override
     public String toString() {
         return "======== SummonRift =======" + "\n" +
-                ", Thời gian bắt đầu trận đấu" + timeStart +
-                "zTeam" + "\n" +teams +
-                '}';
+                "Thời gian bắt đầu trận đấu: " + timeStart + "\n" +
+                "Team 1: " + "\n" +team1 +
+                "Team 2: " + "\n" +team2;
     }
 }

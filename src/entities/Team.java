@@ -32,7 +32,6 @@ public class Team {
     @Override
     public String toString() {
         return "figures=" + figures +
-                ", teamName='" + teamName + '\'' +
-                '}';
+                ", teamName='" + teamName + '\'';
     }
 }
