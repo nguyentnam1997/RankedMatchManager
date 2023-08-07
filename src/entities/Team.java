@@ -31,7 +31,7 @@ public class Team {
 
     @Override
     public String toString() {
-        return "figures=" + figures +
-                ", teamName='" + teamName + '\'';
+        return "Tên đội: " + teamName + "\n" +
+                "Các tướng: " + "\n" + figures;
     }
 }

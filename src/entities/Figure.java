@@ -27,7 +27,7 @@ public class Figure {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                "position='" + position + '\'';
+        return "(Tên: " + name +
+                ", vị trí: " + position + ") \n";
     }
 }
